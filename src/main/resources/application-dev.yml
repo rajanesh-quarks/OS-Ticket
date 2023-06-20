@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: GControl-ticket-management-service
+
+server:
+  port: 8282
+eureka:
+  instance:
+    hostname: localhost
+    serviceUrl:
+      defaultZone : http://${eureka.instance.hostname}:8761/eureka/
+
+
