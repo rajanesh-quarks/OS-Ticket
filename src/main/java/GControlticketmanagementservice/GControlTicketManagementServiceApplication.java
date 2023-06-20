@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @ComponentScan(basePackages = "com.globetouch.iotsmp")
 @EnableEurekaClient
 @EnableSwagger2
-public class GControlTicketManagementServiceApplication extends SpringBootServletInitializer {
+public class GControlTicketManagementServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GControlTicketManagementServiceApplication.class, args);
@@ -29,10 +29,6 @@ public class GControlTicketManagementServiceApplication extends SpringBootServle
 		return servlet;
 	}
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(GControlTicketManagementServiceApplication.class);
-	}
 
 	@Bean
 	public Sampler defaultSampler() {

@@ -6,7 +6,7 @@ server:
   port: 8290
 eureka:
   instance:
-    hostname: https://192.168.1.37
+    hostname: localhost
     serviceUrl:
       defaultZone : http://${eureka.instance.hostname}:8761/eureka/
 
